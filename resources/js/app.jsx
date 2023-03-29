@@ -15,9 +15,16 @@ import '../css/app.css'
 
 //import './components/Example';
 import ReactDOM from 'react-dom/client';
-import Example from './components/Example';
+import Example from './components/Menu';
+import Login from './components/Login';
+import Settings from './components/Settings';
+import Register from './components/Register';
+import { Container } from 'react-bootstrap';
+
 
 ReactDOM.createRoot(document.getElementById('example')).render(
-    <Example/>
+   <Container> 
+        <Register/>
+    </Container>
 );
 
