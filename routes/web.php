@@ -20,6 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/{path?}', 'welcome')
+      ->where('path', '.*');
+
 Route::get('/student_show', [StudentController::class, 'index']);
 Route::get('/show_token', [StudentController::class, 'showToken']);
 

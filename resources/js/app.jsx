@@ -19,12 +19,14 @@ import Example from './components/Menu';
 import Login from './components/Login';
 import Settings from './components/Settings';
 import Register from './components/Register';
+import Main from './components/Main';
 import { Container } from 'react-bootstrap';
+import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.createRoot(document.getElementById('example')).render(
-   <Container> 
-        <Register/>
-    </Container>
+   <BrowserRouter> 
+        <Main/>
+    </BrowserRouter>
 );
 
